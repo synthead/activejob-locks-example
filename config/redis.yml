@@ -1,0 +1,14 @@
+default: &default
+  url: unix:/Users/erickrause/redis.sock
+
+development:
+  <<: *default
+  namespace: my_rails_project_development
+
+test:
+  <<: *default
+  namespace: my_rails_project_test
+
+production:
+  <<: *default
+  namespace: my_rails_project_production
