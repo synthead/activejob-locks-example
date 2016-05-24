@@ -1,5 +1,6 @@
 default: &default
-  url: unix:/Users/erickrause/redis.sock
+  # url: unix:/Users/erickrause/redis.sock
+  url: redis://localhost:6379
 
 development:
   <<: *default
