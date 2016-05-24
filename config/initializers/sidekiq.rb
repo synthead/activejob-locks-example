@@ -1,5 +1,4 @@
 Sidekiq.configure_server do |config|
-  # config.redis = { :url => ENV['OPENREDIS_URL'] }
   config.redis = { :url => Rails.application.config_for(:redis)["url"] }
 
 end
